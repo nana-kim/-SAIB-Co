@@ -43,7 +43,13 @@ export default function main() {
 
           <ul>
             <li>FAQ</li>
-            <li>LOGIN</li>
+            <li className="login">
+              LOGIN
+              <img
+                src="https://saibstorage.blob.core.windows.net/image/saibnco_tooltip.gif"
+                alt="icoTooltip"
+              />
+            </li>
             <li>CART</li>
             <li>MAPAGE</li>
           </ul>
@@ -513,6 +519,87 @@ export default function main() {
           </div>
         </div>
       </SixthSection>
+      <SeventhSection>
+        <div className="seventhSectionContainer">
+          <div className="seventhSectionMainText">
+            <span>instagram ⎯⎯⎯⎯ @saibnco</span>
+          </div>
+          <div className="instargramImagecontainer">
+            <div className="instagramImageBox">
+              <div className="image3">
+                <img
+                  src="https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/133918178_208358404332900_2242184584154166553_n.jpg?_nc_cat=109&ccb=2&_nc_sid=8ae9d6&_nc_ohc=TsmvE1GAEQQAX9DihhN&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=9718e8f75ef7c04c8981ad1374d0ded7&oe=6030E7CE"
+                  alt="instargramimage"
+                ></img>
+                <img
+                  src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-15/133986150_414513509796518_7526722200609165944_n.jpg?_nc_cat=110&ccb=2&_nc_sid=8ae9d6&_nc_ohc=NhVy-UP3xXsAX9ky1bi&_nc_ht=scontent-frx5-1.cdninstagram.com&oh=6ed0f5b38df2447ab1bd722718c307f8&oe=60336BEC"
+                  alt="instargramimage"
+                ></img>
+                <img
+                  src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-15/134229892_4802758916464805_1252592636142131188_n.jpg?_nc_cat=110&ccb=2&_nc_sid=8ae9d6&_nc_ohc=9WNNLsu9kfIAX_2gtFg&_nc_ht=scontent-frx5-1.cdninstagram.com&oh=375b70084f56373ab6d667cbaca83b4a&oe=60345243"
+                  alt="instargramimage"
+                ></img>
+              </div>
+              <div className="image3">
+                <img
+                  src="https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/132940133_1549251718798002_5026775684952730286_n.jpg?_nc_cat=103&ccb=2&_nc_sid=8ae9d6&_nc_ohc=GU8z-WjnKfwAX_j8y9X&_nc_ht=scontent-frt3-2.cdninstagram.com&oh=e5bfa052e817cb5ff704d7cf56030b4f&oe=60319359"
+                  alt="instargramimage"
+                ></img>
+                <img
+                  src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-15/132199977_3691758420847002_6163243284845155270_n.jpg?_nc_cat=105&ccb=2&_nc_sid=8ae9d6&_nc_ohc=6IFWnZixtvkAX-G_QHK&_nc_ht=scontent-frx5-1.cdninstagram.com&oh=4ff51b5a39f1def0c0024e69b6fc2099&oe=60342B32"
+                  alt="instargramimage"
+                ></img>
+                <img
+                  src="https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/132106159_1352858508396970_5339002645215342510_n.jpg?_nc_cat=109&ccb=2&_nc_sid=8ae9d6&_nc_ohc=vfa9J3dgixwAX-z0EvX&_nc_ht=scontent-frt3-1.cdninstagram.com&oh=38bafb30831f029a30e80f7707a1e917&oe=60333600"
+                  alt="instargramimage"
+                ></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SeventhSection>
+      <Footer>
+        <div className="footerContainer">
+          <div className="footerTextBox">
+            <div className="socialIcon">
+              <img
+                src="https://www.saibnco.com/web/new/global6.png"
+                alt="global"
+              ></img>
+              <img
+                src="https://www.saibnco.com/web/new/insta6.png"
+                alt="instar"
+              ></img>
+              <img
+                src="https://www.saibnco.com/web/new/fb6.png"
+                alt="facebook"
+              ></img>
+            </div>
+            <div>
+              <p>
+                <span className="bold">(주)세이브앤코 </span>| 대표 박지원 |
+                사업자등록번호 165-87-00778 | 통신판매업 제 2018-서울강남
+                -02911호
+              </p>
+              <p>
+                hello@saibnco.com | TEL 02-6204-1023 | 서울동작구 노량진로 10,
+                2층 E-01
+              </p>
+              <p>
+                Copyright © 세이브앤코 All Rights Reserved<br></br>
+              </p>
+              <div className="companyGuide">
+                <p>이용약관 | 개인정보취급방침 | 가이드</p>
+                <p>
+                  고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서
+                  가입한 PG사의 구매안전서비스를 이용하실 수 있습니다. | KG
+                  이니시스 에스크로(서비스가입사실확인)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Footer>
     </Main>
   );
 }
@@ -545,6 +632,17 @@ const NavContainer = styled.div`
         font-size: 14px;
         font-weight: bold;
         padding-right: 36px;
+      }
+      .login {
+        position: relative;
+        img {
+          position: absolute;
+          top: 20px;
+          left: -11px;
+
+          width: 70px;
+          height: 30px;
+        }
       }
     }
 
@@ -1103,6 +1201,73 @@ const SixthSection = styled.div`
 
       img {
         width: 1000px;
+      }
+    }
+  }
+`;
+const SeventhSection = styled.div`
+  .seventhSectionContainer {
+    margin: 100px auto;
+    .seventhSectionMainText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 70px;
+      span {
+        font-weight: lighter;
+        font-size: 28px;
+      }
+    }
+    .instargramImagecontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .instagramImageBox {
+        width: 900px;
+        .image3 {
+          img {
+            width: 33.3%;
+          }
+        }
+      }
+    }
+  }
+`;
+const Footer = styled.div`
+  .footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce8ec;
+    padding: 50px 0px;
+    .footerTextBox {
+      width: 1000px;
+      .socialIcon {
+        float: right;
+        img {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      div {
+        p {
+          margin: 0px auto 0px;
+          line-height: 22px;
+          font-size: 12px;
+          color: #cca6b0;
+          .bold {
+            font-weight: bold;
+          }
+        }
+      }
+      .companyGuide {
+        padding-top: 22px;
+        p {
+          line-height: 22px;
+          font-size: 12px;
+          color: #cca6b0;
+        }
       }
     }
   }
