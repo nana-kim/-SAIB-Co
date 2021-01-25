@@ -135,6 +135,14 @@ export default function main() {
           </div>
         </div>
       </SecondSection>
+      <ToTop>
+        <img src="https://www.saibnco.com/web/new/totop2.png" alt="totopIcon" />
+      </ToTop>
+      <LaunchersIcon>
+        <div className="launchersIconContainer">
+          <div className="launchersIconImage"></div>
+        </div>
+      </LaunchersIcon>
       <Thirdsection>
         <div className="thirdSectionContainer">
           <div className="thirdSectionMainText">
@@ -674,6 +682,10 @@ const NavContainer = styled.div`
 const Video = styled.div`
   .videoContainer {
     height: 650px;
+    @media (max-width: 1000px) {
+      height: 300px;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -685,6 +697,9 @@ const SecondSection = styled.div`
     background-image: url("https://www.saibnco.com/web/new/section2_bg.png");
     height: 700px;
     background-size: cover;
+    @media (max-width: 786px) {
+      height: 1500px;
+    }
     .secondSectionContainer {
       width: 1000px;
       margin: 0 auto;
@@ -695,6 +710,10 @@ const SecondSection = styled.div`
         margin-top: 92px;
         margin-bottom: 90px;
         padding-left: 2px;
+        @media (max-width: 786px) {
+          padding-left: 15px;
+        }
+
         span {
           left: 2px;
           font-size: 40px;
@@ -708,8 +727,16 @@ const SecondSection = styled.div`
           display: flex;
           align-items: center;
           justify-content: space-between;
+          @media (max-width: 786px) {
+            width: 400px;
+            flex-direction: column;
+          }
+
           .imageBox {
             width: 300px;
+            @media (max-width: 786px) {
+              margin-bottom: 30px;
+            }
             img {
               width: 300px;
               height: 300px;
@@ -718,6 +745,7 @@ const SecondSection = styled.div`
             .productInfoText {
               width: 300px;
               line-height: 20px;
+
               .text1 {
                 font-size: 14px;
                 color: #797979;
@@ -735,6 +763,9 @@ const SecondSection = styled.div`
           }
           .imageBox2 {
             width: 300px;
+            @media (max-width: 786px) {
+              margin-bottom: 30px;
+            }
             img {
               width: 300px;
               height: 300px;
@@ -743,6 +774,7 @@ const SecondSection = styled.div`
             .productInfoText {
               width: 300px;
               line-height: 20px;
+
               .text1 {
                 font-size: 14px;
                 color: #797979;
@@ -769,6 +801,11 @@ const SecondSection = styled.div`
           justify-content: center;
           align-items: center;
           margin: 50px 0;
+          @media (max-width: 786px) {
+            width: 400px;
+            flex-direction: column;
+            margin: 20px 0;
+          }
           div {
             width: 160px;
             height: 40px;
@@ -778,6 +815,7 @@ const SecondSection = styled.div`
             justify-content: center;
             align-items: center;
             cursor: pointer;
+
             span {
               color: #ffffff;
               font-size: 20px;
@@ -789,6 +827,42 @@ const SecondSection = styled.div`
     }
   }
 `;
+const ToTop = styled.div`
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 999;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+`;
+
+const LaunchersIcon = styled.div`
+  .launchersIconContainer {
+    position: fixed;
+    bottom: 26px;
+    z-index: 1000000;
+    right: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 6px 0px;
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+    background-color: rgb(252, 232, 236);
+    .launchersIconImage {
+      display: block;
+      width: 34px;
+      height: 34px;
+      background-image: url("https://cdn.channel.io/plugin/images/ch-new-launcher-icon-68.png");
+      background-size: 136px;
+      background-position: 0px -34px;
+    }
+  }
+`;
+
 const Thirdsection = styled.div`
   .thirdSectionContainer {
     width: 1000px;
@@ -796,6 +870,9 @@ const Thirdsection = styled.div`
     .thirdSectionMainText {
       padding-top: 92px;
       margin-bottom: 92px;
+      @media (max-width: 786px) {
+        padding-left: 15px;
+      }
       span {
         font-size: 42px;
         font-weight: lighter;
@@ -808,9 +885,17 @@ const Thirdsection = styled.div`
       padding-bottom: 60px;
       .slideBBox1 {
         display: flex;
+        @media (max-width: 786px) {
+          flex-direction: column;
+        }
         .imges1 {
           width: 500px;
           height: 500px;
+          @media (max-width: 786px) {
+            width: 400px;
+            height: 400px;
+          }
+
           img {
             width: 100%;
             height: 100%;
@@ -820,20 +905,35 @@ const Thirdsection = styled.div`
           background-color: #fce8ec;
           width: 500px;
           height: 500px;
+          @media (max-width: 786px) {
+            width: 400px;
+            height: 400px;
+          }
           .infoTextBox {
             padding-left: 25px;
             padding-top: 15px;
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
+              @media (max-width: 786px) {
+                font-size: 50px;
+              }
             }
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
+              @media (max-width: 786px) {
+                margin-top: 60px;
+                margin-bottom: 50px;
+              }
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
+
+                @media (max-width: 786px) {
+                  font-size: 42px;
+                }
               }
             }
             p {
@@ -847,31 +947,56 @@ const Thirdsection = styled.div`
       }
       .slideBox2 {
         display: flex;
+        @media (max-width: 786px) {
+          flex-direction: column;
+        }
         .imges2 {
           img {
             width: 500px;
             height: 500px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
           }
         }
         .infoContainer {
           background-color: #fce8ec;
+          @media (max-width: 786px) {
+            width: 400px;
+            height: 400px;
+          }
           .infoBox {
             width: 500px;
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
 
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
+              @media (max-width: 786px) {
+                font-size: 50px;
+              }
             }
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
+              @media (max-width: 786px) {
+                margin-top: 60px;
+                margin-bottom: 50px;
+              }
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
+                @media (max-width: 786px) {
+                  font-size: 42px;
+                }
               }
             }
             p {
@@ -885,31 +1010,56 @@ const Thirdsection = styled.div`
       }
       .slideBox3 {
         display: flex;
+        @media (max-width: 786px) {
+          flex-direction: column;
+        }
         .imges3 {
           img {
             width: 500px;
             height: 500px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
           }
         }
         .infoContainer {
           background-color: #fce8ec;
+          @media (max-width: 786px) {
+            width: 400px;
+            height: 400px;
+          }
           .infoBox {
             width: 500px;
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
 
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
+              @media (max-width: 786px) {
+                font-size: 50px;
+              }
             }
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
+              @media (max-width: 786px) {
+                margin-top: 60px;
+                margin-bottom: 50px;
+              }
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
+                @media (max-width: 786px) {
+                  font-size: 42px;
+                }
               }
             }
             p {
@@ -923,31 +1073,56 @@ const Thirdsection = styled.div`
       }
       .slideBox4 {
         display: flex;
+        @media (max-width: 786px) {
+          flex-direction: column;
+        }
         .imges4 {
           img {
             width: 500px;
             height: 500px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
           }
         }
         .infoContainer {
           background-color: #fce8ec;
+          @media (max-width: 786px) {
+            width: 400px;
+            height: 400px;
+          }
           .infoBox {
             width: 500px;
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
 
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
+              @media (max-width: 786px) {
+                font-size: 50px;
+              }
             }
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
+              @media (max-width: 786px) {
+                margin-top: 60px;
+                margin-bottom: 50px;
+              }
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
+                @media (max-width: 786px) {
+                  font-size: 42px;
+                }
               }
             }
             p {
@@ -961,31 +1136,57 @@ const Thirdsection = styled.div`
       }
       .slideBox5 {
         display: flex;
+        @media (max-width: 786px) {
+          flex-direction: column;
+        }
         .imges5 {
           img {
             width: 500px;
             height: 500px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
           }
         }
         .infoContainer {
           background-color: #fce8ec;
+          @media (max-width: 786px) {
+            width: 400px;
+            height: 400px;
+          }
           .infoBox {
             width: 500px;
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
+            @media (max-width: 786px) {
+              width: 400px;
+              height: 400px;
+            }
 
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
+              @media (max-width: 786px) {
+                font-size: 50px;
+              }
             }
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
+              @media (max-width: 786px) {
+                margin-top: 60px;
+                margin-bottom: 50px;
+              }
+
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
+                @media (max-width: 786px) {
+                  font-size: 42px;
+                }
               }
             }
             p {
@@ -998,6 +1199,9 @@ const Thirdsection = styled.div`
         }
       }
       .slick-dots {
+        @media (max-width: 786px) {
+          width: 400px;
+        }
         li {
           width: 10px;
           button::before {
@@ -1013,12 +1217,17 @@ const FourthSection = styled.div`
   .fourthSectionContainer {
     width: 1000px;
     margin: 0 auto;
+
     .reviewBox {
       height: 600px;
-
       padding: 80px 0;
+      /* @media (max-width: 786px) {
+        flex-direction: column;
+      } */
+
       .slider2 {
         padding-bottom: 30px;
+
         .review1 {
           display: flex;
 
@@ -1026,6 +1235,7 @@ const FourthSection = styled.div`
             width: 313px;
             height: 400px;
             background-color: #f8e4e8;
+
             .reviewTop {
               display: flex;
               align-items: center;
