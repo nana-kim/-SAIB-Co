@@ -286,8 +286,8 @@ export default function main() {
                       싫고, 그 향을 감추고자 인공 향료<br></br>를 사용해서
                       지나치게 달달한 향이 나는 것도<br></br> 찜찜했는데 이 제품
                       처음 만나고는 불쾌한<br></br> 향도 없고 손 끝에 남는 기분
-                      나쁜 오일리함도 <br></br>없었어요. 관계 후 씻어낼 때도
-                      확실히
+                      나쁜 오일리함도 <br></br>
+                      없었어요. 관계 후 씻어낼 때도 확실히
                       <br></br>다른 느낌이라 사용 후 찾아봤더니 역시 좋은
                       <br></br>
                       원료들로만 만든 착한 제품이더군요. SAIB<br></br>를 만난
@@ -657,9 +657,8 @@ const NavContainer = styled.div`
     .logoImg {
       width: 130px;
       height: 54px;
-      padding-right: 36px;
+      margin-right: 36px;
     }
-
     ul {
       display: flex;
       text-align: center;
@@ -668,6 +667,9 @@ const NavContainer = styled.div`
         color: #3b3f56;
         font-size: 14px;
         font-weight: bold;
+        @media (max-width: 400px) {
+          display: none;
+        }
       }
     }
     .rightIcon {
@@ -697,7 +699,7 @@ const SecondSection = styled.div`
     background-image: url("https://www.saibnco.com/web/new/section2_bg.png");
     height: 700px;
     background-size: cover;
-    @media (max-width: 786px) {
+    @media (max-width: 400px) {
       height: 1500px;
     }
     .secondSectionContainer {
@@ -710,7 +712,7 @@ const SecondSection = styled.div`
         margin-top: 92px;
         margin-bottom: 90px;
         padding-left: 2px;
-        @media (max-width: 786px) {
+        @media (max-width: 400px) {
           padding-left: 15px;
         }
 
@@ -727,14 +729,14 @@ const SecondSection = styled.div`
           display: flex;
           align-items: center;
           justify-content: space-between;
-          @media (max-width: 786px) {
+          @media (max-width: 400px) {
             width: 400px;
             flex-direction: column;
           }
 
           .imageBox {
             width: 300px;
-            @media (max-width: 786px) {
+            @media (max-width: 400px) {
               margin-bottom: 30px;
             }
             img {
@@ -763,7 +765,7 @@ const SecondSection = styled.div`
           }
           .imageBox2 {
             width: 300px;
-            @media (max-width: 786px) {
+            @media (max-width: 400px) {
               margin-bottom: 30px;
             }
             img {
@@ -801,7 +803,7 @@ const SecondSection = styled.div`
           justify-content: center;
           align-items: center;
           margin: 50px 0;
-          @media (max-width: 786px) {
+          @media (max-width: 400px) {
             width: 400px;
             flex-direction: column;
             margin: 20px 0;
@@ -1217,20 +1219,13 @@ const FourthSection = styled.div`
   .fourthSectionContainer {
     width: 1000px;
     margin: 0 auto;
-
     .reviewBox {
       height: 600px;
       padding: 80px 0;
-      /* @media (max-width: 786px) {
-        flex-direction: column;
-      } */
-
       .slider2 {
         padding-bottom: 30px;
-
         .review1 {
           display: flex;
-
           div {
             width: 313px;
             height: 400px;
@@ -1286,10 +1281,19 @@ const FifthSection = styled.div`
   background-color: #fce8ec;
   display: flex;
   justify-content: center;
+  @media (max-width: 786px) {
+    height: 800px;
+  }
   div {
     width: 1000px;
+    @media (max-width: 786px) {
+      width: 400px;
+    }
     .fifthSectionMainText {
       padding-top: 92px;
+      @media (max-width: 786px) {
+        padding-left: 15px;
+      }
       span {
         font-size: 40px;
         color: #5d6078;
@@ -1302,8 +1306,16 @@ const FifthSection = styled.div`
       align-items: center;
       margin-top: 61px;
       margin-bottom: 200px;
+      @media (max-width: 786px) {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
       img {
         width: 650px;
+        @media (max-width: 786px) {
+          width: 400px;
+        }
       }
       .rightBox {
         width: 320px;
@@ -1316,6 +1328,9 @@ const FifthSection = styled.div`
             line-height: 40px;
             color: #e7acbd;
             margin-top: 138px;
+            @media (max-width: 786px) {
+              margin-top: 60px;
+            }
           }
         }
         .infoText {
@@ -1326,6 +1341,9 @@ const FifthSection = styled.div`
             line-height: 26px;
             margin-top: 133px;
             font-weight: lighter;
+            @media (max-width: 786px) {
+              margin-top: 60px;
+            }
           }
         }
       }
@@ -1337,6 +1355,10 @@ const SixthSection = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 400px) {
+      flex-direction: column;
+      height: 400px;
+    }
     .sixthSectionbox {
       display: flex;
       justify-content: center;
@@ -1344,11 +1366,19 @@ const SixthSection = styled.div`
       width: 1000px;
       height: 195px;
       margin: 30px 0;
+      @media (max-width: 400px) {
+        flex-direction: column;
+      }
       .award {
         width: 390px;
         height: 135px;
         padding: 30px 60px 30px 0;
-
+        @media (max-width: 400px) {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 40px 0;
+        }
         .mainText {
           width: 224px;
           height: 44px;
@@ -1368,6 +1398,14 @@ const SixthSection = styled.div`
         padding: 30px 100px;
         border-right: 1px solid #e7acbd;
         border-left: 1px solid #e7acbd;
+        @media (max-width: 400px) {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 30px 0;
+          border-top: 1px solid #e7acbd;
+          border-bottom: 1px solid #e7acbd;
+        }
 
         .mainText {
           width: 224px;
@@ -1386,7 +1424,12 @@ const SixthSection = styled.div`
         width: 390px;
         height: 135px;
         padding: 30px 0px 30px 85px;
-
+        @media (max-width: 400px) {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 40px 0;
+        }
         .mainText {
           width: 224px;
           height: 44px;
@@ -1411,6 +1454,9 @@ const SixthSection = styled.div`
 
       img {
         width: 1000px;
+        @media (max-width: 786px) {
+          width: 400px;
+        }
       }
     }
   }
@@ -1450,17 +1496,34 @@ const Footer = styled.div`
     align-items: center;
     background-color: #fce8ec;
     padding: 50px 0px;
+    @media (max-width: 500px) {
+      padding: 30px 30px;
+    }
+
     .footerTextBox {
       width: 1000px;
+      @media (max-width: 500px) {
+        width: 500px;
+      }
       .socialIcon {
         float: right;
+        @media (max-width: 500px) {
+          margin-left: 20px;
+        }
         img {
           margin-right: 10px;
           width: 40px;
           height: 40px;
+          @media (max-width: 600px) {
+            width: 25px;
+            height: 25px;
+          }
         }
       }
       div {
+        @media (max-width: 400px) {
+          flex-direction: column;
+        }
         p {
           margin: 0px auto 0px;
           line-height: 22px;
