@@ -641,8 +641,10 @@ const NavContainer = styled.div`
         font-weight: bold;
         padding-right: 36px;
       }
+
       .login {
         position: relative;
+
         img {
           position: absolute;
           top: 20px;
@@ -659,9 +661,11 @@ const NavContainer = styled.div`
       height: 54px;
       margin-right: 36px;
     }
+
     ul {
       display: flex;
       text-align: center;
+
       li {
         padding-right: 36px;
         color: #3b3f56;
@@ -672,6 +676,7 @@ const NavContainer = styled.div`
         }
       }
     }
+
     .rightIcon {
       .navRightIcon {
         width: 30px;
@@ -681,6 +686,7 @@ const NavContainer = styled.div`
     }
   }
 `;
+
 const Video = styled.div`
   .videoContainer {
     height: 650px;
@@ -694,6 +700,7 @@ const Video = styled.div`
     }
   }
 `;
+
 const SecondSection = styled.div`
   .background {
     background-image: url("https://www.saibnco.com/web/new/section2_bg.png");
@@ -702,6 +709,7 @@ const SecondSection = styled.div`
     @media (max-width: 400px) {
       height: 1500px;
     }
+
     .secondSectionContainer {
       width: 1000px;
       margin: 0 auto;
@@ -723,6 +731,7 @@ const SecondSection = styled.div`
           line-height: 50px;
         }
       }
+
       .productInfoBox {
         .productInfo {
           width: 1000px;
@@ -739,11 +748,13 @@ const SecondSection = styled.div`
             @media (max-width: 400px) {
               margin-bottom: 30px;
             }
+
             img {
               width: 300px;
               height: 300px;
               margin-bottom: 23px;
             }
+
             .productInfoText {
               width: 300px;
               line-height: 20px;
@@ -752,10 +763,12 @@ const SecondSection = styled.div`
                 font-size: 14px;
                 color: #797979;
               }
+
               .text2 {
                 font-size: 16px;
                 color: #282c49;
               }
+
               .text3 {
                 font-size: 16px;
                 color: #be4b78;
@@ -763,16 +776,19 @@ const SecondSection = styled.div`
               }
             }
           }
+
           .imageBox2 {
             width: 300px;
             @media (max-width: 400px) {
               margin-bottom: 30px;
             }
+
             img {
               width: 300px;
               height: 300px;
               margin-bottom: 23px;
             }
+
             .productInfoText {
               width: 300px;
               line-height: 20px;
@@ -781,14 +797,17 @@ const SecondSection = styled.div`
                 font-size: 14px;
                 color: #797979;
               }
+
               .text2 {
                 font-size: 16px;
                 color: #282c49;
               }
+
               .text3 {
                 display: flex;
                 font-size: 16px;
                 color: #282c49;
+
                 .discount {
                   padding: 0 3px;
                   font-size: 16px;
@@ -798,6 +817,7 @@ const SecondSection = styled.div`
             }
           }
         }
+
         .shopButtonContainer {
           display: flex;
           justify-content: center;
@@ -808,6 +828,7 @@ const SecondSection = styled.div`
             flex-direction: column;
             margin: 20px 0;
           }
+
           div {
             width: 160px;
             height: 40px;
@@ -829,11 +850,13 @@ const SecondSection = styled.div`
     }
   }
 `;
+
 const ToTop = styled.div`
   position: fixed;
   bottom: 100px;
   right: 30px;
   z-index: 999;
+
   img {
     width: 50px;
     height: 50px;
@@ -854,6 +877,7 @@ const LaunchersIcon = styled.div`
     height: 62px;
     border-radius: 31px;
     background-color: rgb(252, 232, 236);
+
     .launchersIconImage {
       display: block;
       width: 34px;
@@ -869,27 +893,33 @@ const Thirdsection = styled.div`
   .thirdSectionContainer {
     width: 1000px;
     margin: 0 auto;
+
     .thirdSectionMainText {
       padding-top: 92px;
       margin-bottom: 92px;
       @media (max-width: 786px) {
         padding-left: 15px;
       }
+
       span {
         font-size: 42px;
         font-weight: lighter;
       }
     }
   }
+
   .slideBox {
     padding-bottom: 100px;
+
     .slider {
       padding-bottom: 60px;
+
       .slideBBox1 {
         display: flex;
         @media (max-width: 786px) {
           flex-direction: column;
         }
+
         .imges1 {
           width: 500px;
           height: 500px;
@@ -903,6 +933,7 @@ const Thirdsection = styled.div`
             height: 100%;
           }
         }
+
         .infoContainer {
           background-color: #fce8ec;
           width: 500px;
@@ -911,9 +942,11 @@ const Thirdsection = styled.div`
             width: 400px;
             height: 400px;
           }
+
           .infoTextBox {
             padding-left: 25px;
             padding-top: 15px;
+
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
@@ -921,6 +954,7 @@ const Thirdsection = styled.div`
                 font-size: 50px;
               }
             }
+
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
@@ -928,6 +962,7 @@ const Thirdsection = styled.div`
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
+
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
@@ -938,6 +973,7 @@ const Thirdsection = styled.div`
                 }
               }
             }
+
             p {
               font-size: 18px;
               color: #3b3f56;
@@ -947,11 +983,13 @@ const Thirdsection = styled.div`
           }
         }
       }
+
       .slideBox2 {
         display: flex;
         @media (max-width: 786px) {
           flex-direction: column;
         }
+
         .imges2 {
           img {
             width: 500px;
@@ -962,12 +1000,14 @@ const Thirdsection = styled.div`
             }
           }
         }
+
         .infoContainer {
           background-color: #fce8ec;
           @media (max-width: 786px) {
             width: 400px;
             height: 400px;
           }
+
           .infoBox {
             width: 500px;
             height: 500px;
@@ -985,6 +1025,7 @@ const Thirdsection = styled.div`
                 font-size: 50px;
               }
             }
+
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
@@ -992,6 +1033,7 @@ const Thirdsection = styled.div`
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
+
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
@@ -1001,6 +1043,7 @@ const Thirdsection = styled.div`
                 }
               }
             }
+
             p {
               font-size: 18px;
               color: #3b3f56;
@@ -1010,11 +1053,13 @@ const Thirdsection = styled.div`
           }
         }
       }
+
       .slideBox3 {
         display: flex;
         @media (max-width: 786px) {
           flex-direction: column;
         }
+
         .imges3 {
           img {
             width: 500px;
@@ -1025,12 +1070,14 @@ const Thirdsection = styled.div`
             }
           }
         }
+
         .infoContainer {
           background-color: #fce8ec;
           @media (max-width: 786px) {
             width: 400px;
             height: 400px;
           }
+
           .infoBox {
             width: 500px;
             height: 500px;
@@ -1048,6 +1095,7 @@ const Thirdsection = styled.div`
                 font-size: 50px;
               }
             }
+
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
@@ -1055,6 +1103,7 @@ const Thirdsection = styled.div`
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
+
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
@@ -1064,6 +1113,7 @@ const Thirdsection = styled.div`
                 }
               }
             }
+
             p {
               font-size: 18px;
               color: #3b3f56;
@@ -1073,11 +1123,13 @@ const Thirdsection = styled.div`
           }
         }
       }
+
       .slideBox4 {
         display: flex;
         @media (max-width: 786px) {
           flex-direction: column;
         }
+
         .imges4 {
           img {
             width: 500px;
@@ -1088,12 +1140,14 @@ const Thirdsection = styled.div`
             }
           }
         }
+
         .infoContainer {
           background-color: #fce8ec;
           @media (max-width: 786px) {
             width: 400px;
             height: 400px;
           }
+
           .infoBox {
             width: 500px;
             height: 500px;
@@ -1111,6 +1165,7 @@ const Thirdsection = styled.div`
                 font-size: 50px;
               }
             }
+
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
@@ -1118,6 +1173,7 @@ const Thirdsection = styled.div`
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
+
               .text2 {
                 font-size: 52px;
                 color: #e7acbd;
@@ -1127,6 +1183,7 @@ const Thirdsection = styled.div`
                 }
               }
             }
+
             p {
               font-size: 18px;
               color: #3b3f56;
@@ -1136,11 +1193,13 @@ const Thirdsection = styled.div`
           }
         }
       }
+
       .slideBox5 {
         display: flex;
         @media (max-width: 786px) {
           flex-direction: column;
         }
+
         .imges5 {
           img {
             width: 500px;
@@ -1151,12 +1210,14 @@ const Thirdsection = styled.div`
             }
           }
         }
+
         .infoContainer {
           background-color: #fce8ec;
           @media (max-width: 786px) {
             width: 400px;
             height: 400px;
           }
+
           .infoBox {
             width: 500px;
             height: 500px;
@@ -1174,6 +1235,7 @@ const Thirdsection = styled.div`
                 font-size: 50px;
               }
             }
+
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
@@ -1191,6 +1253,7 @@ const Thirdsection = styled.div`
                 }
               }
             }
+
             p {
               font-size: 18px;
               color: #3b3f56;
@@ -1200,12 +1263,15 @@ const Thirdsection = styled.div`
           }
         }
       }
+
       .slick-dots {
         @media (max-width: 786px) {
           width: 400px;
         }
+
         li {
           width: 10px;
+
           button::before {
             font-size: 15px;
             color: #f3bfc8;
@@ -1215,17 +1281,22 @@ const Thirdsection = styled.div`
     }
   }
 `;
+
 const FourthSection = styled.div`
   .fourthSectionContainer {
     width: 1000px;
     margin: 0 auto;
+
     .reviewBox {
       height: 600px;
       padding: 80px 0;
+
       .slider2 {
         padding-bottom: 30px;
+
         .review1 {
           display: flex;
+
           div {
             width: 313px;
             height: 400px;
@@ -1237,12 +1308,14 @@ const FourthSection = styled.div`
               padding: 0px 30px 0px;
               height: 74px;
               padding-top: 40px;
+
               .peopleIcon {
                 width: 42px;
                 height: 42px;
                 padding-right: 10px;
               }
             }
+
             .reviewTextBox {
               padding: 15px 30px 40px;
               height: 212px;
@@ -1252,9 +1325,11 @@ const FourthSection = styled.div`
                 line-height: 1.5em;
               }
             }
+
             .reviewInfo {
               padding: 30px 30px 0 30px;
               height: 42px;
+
               p {
                 font-size: 14px;
                 color: #e0a6b8;
@@ -1264,9 +1339,11 @@ const FourthSection = styled.div`
             }
           }
         }
+
         .slick-dots {
           li {
             width: 10px;
+
             button::before {
               font-size: 15px;
               color: #f3bfc8;
@@ -1277,6 +1354,7 @@ const FourthSection = styled.div`
     }
   }
 `;
+
 const FifthSection = styled.div`
   background-color: #fce8ec;
   display: flex;
@@ -1284,22 +1362,26 @@ const FifthSection = styled.div`
   @media (max-width: 786px) {
     height: 800px;
   }
+
   div {
     width: 1000px;
     @media (max-width: 786px) {
       width: 400px;
     }
+
     .fifthSectionMainText {
       padding-top: 92px;
       @media (max-width: 786px) {
         padding-left: 15px;
       }
+
       span {
         font-size: 40px;
         color: #5d6078;
         font-weight: lighter;
       }
     }
+
     .campaingInfoContainer {
       display: flex;
       justify-content: space-between;
@@ -1311,18 +1393,22 @@ const FifthSection = styled.div`
         margin-top: 40px;
         margin-bottom: 50px;
       }
+
       img {
         width: 650px;
         @media (max-width: 786px) {
           width: 400px;
         }
       }
+
       .rightBox {
         width: 320px;
         height: 500px;
+
         .mainText {
           width: 320px;
           height: 80px;
+
           p {
             font-size: 50px;
             line-height: 40px;
@@ -1333,9 +1419,11 @@ const FifthSection = styled.div`
             }
           }
         }
+
         .infoText {
           width: 320px;
           height: 78px;
+
           p {
             font-size: 18px;
             line-height: 26px;
@@ -1350,6 +1438,7 @@ const FifthSection = styled.div`
     }
   }
 `;
+
 const SixthSection = styled.div`
   .sixthSectionContainer {
     display: flex;
@@ -1359,6 +1448,7 @@ const SixthSection = styled.div`
       flex-direction: column;
       height: 400px;
     }
+
     .sixthSectionbox {
       display: flex;
       justify-content: center;
@@ -1369,6 +1459,7 @@ const SixthSection = styled.div`
       @media (max-width: 400px) {
         flex-direction: column;
       }
+
       .award {
         width: 390px;
         height: 135px;
@@ -1379,12 +1470,14 @@ const SixthSection = styled.div`
           flex-direction: column;
           padding: 40px 0;
         }
+
         .mainText {
           width: 224px;
           height: 44px;
           font-size: 35px;
           font-weight: 100;
         }
+
         .infoText {
           width: 224px;
           font-size: 18px;
@@ -1392,6 +1485,7 @@ const SixthSection = styled.div`
           font-weight: lighter;
         }
       }
+
       .press {
         width: 390px;
         height: 135px;
@@ -1413,6 +1507,7 @@ const SixthSection = styled.div`
           font-size: 35px;
           font-weight: 100;
         }
+
         .infoText {
           width: 224px;
           font-size: 18px;
@@ -1420,6 +1515,7 @@ const SixthSection = styled.div`
           font-weight: lighter;
         }
       }
+
       .stockist {
         width: 390px;
         height: 135px;
@@ -1430,12 +1526,14 @@ const SixthSection = styled.div`
           flex-direction: column;
           padding: 40px 0;
         }
+
         .mainText {
           width: 224px;
           height: 44px;
           font-size: 35px;
           font-weight: 100;
         }
+
         .infoText {
           width: 224px;
           font-size: 18px;
@@ -1445,6 +1543,7 @@ const SixthSection = styled.div`
       }
     }
   }
+
   .awardListContainer {
     .awardList {
       background-color: #fce8ec;
@@ -1461,25 +1560,31 @@ const SixthSection = styled.div`
     }
   }
 `;
+
 const SeventhSection = styled.div`
   .seventhSectionContainer {
     margin: 100px auto;
+
     .seventhSectionMainText {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 70px;
+
       span {
         font-weight: lighter;
         font-size: 28px;
       }
     }
+
     .instargramImagecontainer {
       display: flex;
       justify-content: center;
       align-items: center;
+
       .instagramImageBox {
         width: 900px;
+
         .image3 {
           img {
             width: 33.3%;
@@ -1505,11 +1610,13 @@ const Footer = styled.div`
       @media (max-width: 500px) {
         width: 500px;
       }
+
       .socialIcon {
         float: right;
         @media (max-width: 500px) {
           margin-left: 20px;
         }
+
         img {
           margin-right: 10px;
           width: 40px;
@@ -1520,22 +1627,27 @@ const Footer = styled.div`
           }
         }
       }
+
       div {
         @media (max-width: 400px) {
           flex-direction: column;
         }
+
         p {
           margin: 0px auto 0px;
           line-height: 22px;
           font-size: 12px;
           color: #cca6b0;
+
           .bold {
             font-weight: bold;
           }
         }
       }
+
       .companyGuide {
         padding-top: 22px;
+
         p {
           line-height: 22px;
           font-size: 12px;
