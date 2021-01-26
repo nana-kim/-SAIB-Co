@@ -630,6 +630,11 @@ const NavContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     ul {
       display: flex;
@@ -649,7 +654,6 @@ const NavContainer = styled.div`
           position: absolute;
           top: 20px;
           left: -11px;
-
           width: 70px;
           height: 30px;
         }
@@ -660,6 +664,9 @@ const NavContainer = styled.div`
       width: 130px;
       height: 54px;
       margin-right: 36px;
+      @media (max-width: 768px) {
+        margin: 0px;
+      }
     }
 
     ul {
@@ -671,7 +678,7 @@ const NavContainer = styled.div`
         color: #3b3f56;
         font-size: 14px;
         font-weight: bold;
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           display: none;
         }
       }
@@ -682,6 +689,9 @@ const NavContainer = styled.div`
         width: 30px;
         height: 20px;
         padding-right: 10px;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
@@ -690,7 +700,7 @@ const NavContainer = styled.div`
 const Video = styled.div`
   .videoContainer {
     height: 650px;
-    @media (max-width: 1000px) {
+    @media (max-width: 768px) {
       height: 300px;
     }
 
@@ -706,7 +716,7 @@ const SecondSection = styled.div`
     background-image: url("https://www.saibnco.com/web/new/section2_bg.png");
     height: 700px;
     background-size: cover;
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       height: 1500px;
     }
 
@@ -720,7 +730,7 @@ const SecondSection = styled.div`
         margin-top: 92px;
         margin-bottom: 90px;
         padding-left: 2px;
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           padding-left: 15px;
         }
 
@@ -738,14 +748,14 @@ const SecondSection = styled.div`
           display: flex;
           align-items: center;
           justify-content: space-between;
-          @media (max-width: 400px) {
+          @media (max-width: 768px) {
             width: 400px;
             flex-direction: column;
           }
 
           .imageBox {
             width: 300px;
-            @media (max-width: 400px) {
+            @media (max-width: 768px) {
               margin-bottom: 30px;
             }
 
@@ -779,7 +789,7 @@ const SecondSection = styled.div`
 
           .imageBox2 {
             width: 300px;
-            @media (max-width: 400px) {
+            @media (max-width: 768px) {
               margin-bottom: 30px;
             }
 
@@ -823,7 +833,7 @@ const SecondSection = styled.div`
           justify-content: center;
           align-items: center;
           margin: 50px 0;
-          @media (max-width: 400px) {
+          @media (max-width: 768px) {
             width: 400px;
             flex-direction: column;
             margin: 20px 0;
@@ -897,7 +907,7 @@ const Thirdsection = styled.div`
     .thirdSectionMainText {
       padding-top: 92px;
       margin-bottom: 92px;
-      @media (max-width: 786px) {
+      @media (max-width: 768px) {
         padding-left: 15px;
       }
 
@@ -916,14 +926,14 @@ const Thirdsection = styled.div`
 
       .slideBBox1 {
         display: flex;
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           flex-direction: column;
         }
 
         .imges1 {
           width: 500px;
           height: 500px;
-          @media (max-width: 786px) {
+          @media (max-width: 768px) {
             width: 400px;
             height: 400px;
           }
@@ -938,7 +948,7 @@ const Thirdsection = styled.div`
           background-color: #fce8ec;
           width: 500px;
           height: 500px;
-          @media (max-width: 786px) {
+          @media (max-width: 768px) {
             width: 400px;
             height: 400px;
           }
@@ -950,7 +960,7 @@ const Thirdsection = styled.div`
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 font-size: 50px;
               }
             }
@@ -958,7 +968,7 @@ const Thirdsection = styled.div`
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
@@ -968,7 +978,7 @@ const Thirdsection = styled.div`
                 color: #e7acbd;
                 font-weight: bold;
 
-                @media (max-width: 786px) {
+                @media (max-width: 768px) {
                   font-size: 42px;
                 }
               }
@@ -986,7 +996,7 @@ const Thirdsection = styled.div`
 
       .slideBox2 {
         display: flex;
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           flex-direction: column;
         }
 
@@ -994,7 +1004,7 @@ const Thirdsection = styled.div`
           img {
             width: 500px;
             height: 500px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1003,7 +1013,7 @@ const Thirdsection = styled.div`
 
         .infoContainer {
           background-color: #fce8ec;
-          @media (max-width: 786px) {
+          @media (max-width: 768px) {
             width: 400px;
             height: 400px;
           }
@@ -1013,7 +1023,7 @@ const Thirdsection = styled.div`
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1021,7 +1031,7 @@ const Thirdsection = styled.div`
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 font-size: 50px;
               }
             }
@@ -1029,7 +1039,7 @@ const Thirdsection = styled.div`
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
@@ -1038,7 +1048,7 @@ const Thirdsection = styled.div`
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
-                @media (max-width: 786px) {
+                @media (max-width: 768px) {
                   font-size: 42px;
                 }
               }
@@ -1056,7 +1066,7 @@ const Thirdsection = styled.div`
 
       .slideBox3 {
         display: flex;
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           flex-direction: column;
         }
 
@@ -1064,7 +1074,7 @@ const Thirdsection = styled.div`
           img {
             width: 500px;
             height: 500px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1073,7 +1083,7 @@ const Thirdsection = styled.div`
 
         .infoContainer {
           background-color: #fce8ec;
-          @media (max-width: 786px) {
+          @media (max-width: 768px) {
             width: 400px;
             height: 400px;
           }
@@ -1083,7 +1093,7 @@ const Thirdsection = styled.div`
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1091,7 +1101,7 @@ const Thirdsection = styled.div`
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 font-size: 50px;
               }
             }
@@ -1099,7 +1109,7 @@ const Thirdsection = styled.div`
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
@@ -1108,7 +1118,7 @@ const Thirdsection = styled.div`
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
-                @media (max-width: 786px) {
+                @media (max-width: 768px) {
                   font-size: 42px;
                 }
               }
@@ -1126,7 +1136,7 @@ const Thirdsection = styled.div`
 
       .slideBox4 {
         display: flex;
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           flex-direction: column;
         }
 
@@ -1134,7 +1144,7 @@ const Thirdsection = styled.div`
           img {
             width: 500px;
             height: 500px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1143,7 +1153,7 @@ const Thirdsection = styled.div`
 
         .infoContainer {
           background-color: #fce8ec;
-          @media (max-width: 786px) {
+          @media (max-width: 768px) {
             width: 400px;
             height: 400px;
           }
@@ -1153,7 +1163,7 @@ const Thirdsection = styled.div`
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1161,7 +1171,7 @@ const Thirdsection = styled.div`
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 font-size: 50px;
               }
             }
@@ -1169,7 +1179,7 @@ const Thirdsection = styled.div`
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
@@ -1178,7 +1188,7 @@ const Thirdsection = styled.div`
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
-                @media (max-width: 786px) {
+                @media (max-width: 768px) {
                   font-size: 42px;
                 }
               }
@@ -1196,7 +1206,7 @@ const Thirdsection = styled.div`
 
       .slideBox5 {
         display: flex;
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           flex-direction: column;
         }
 
@@ -1204,7 +1214,7 @@ const Thirdsection = styled.div`
           img {
             width: 500px;
             height: 500px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1213,7 +1223,7 @@ const Thirdsection = styled.div`
 
         .infoContainer {
           background-color: #fce8ec;
-          @media (max-width: 786px) {
+          @media (max-width: 768px) {
             width: 400px;
             height: 400px;
           }
@@ -1223,7 +1233,7 @@ const Thirdsection = styled.div`
             height: 500px;
             padding-left: 25px;
             padding-top: 15px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               width: 400px;
               height: 400px;
             }
@@ -1231,7 +1241,7 @@ const Thirdsection = styled.div`
             .text1 {
               font-size: 60px;
               color: #d0d0d0;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 font-size: 50px;
               }
             }
@@ -1239,7 +1249,7 @@ const Thirdsection = styled.div`
             .text2Box {
               margin-top: 120px;
               margin-bottom: 70px;
-              @media (max-width: 786px) {
+              @media (max-width: 768px) {
                 margin-top: 60px;
                 margin-bottom: 50px;
               }
@@ -1248,7 +1258,7 @@ const Thirdsection = styled.div`
                 font-size: 52px;
                 color: #e7acbd;
                 font-weight: bold;
-                @media (max-width: 786px) {
+                @media (max-width: 768px) {
                   font-size: 42px;
                 }
               }
@@ -1265,7 +1275,7 @@ const Thirdsection = styled.div`
       }
 
       .slick-dots {
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           width: 400px;
         }
 
@@ -1359,19 +1369,19 @@ const FifthSection = styled.div`
   background-color: #fce8ec;
   display: flex;
   justify-content: center;
-  @media (max-width: 786px) {
+  @media (max-width: 768px) {
     height: 800px;
   }
 
   div {
     width: 1000px;
-    @media (max-width: 786px) {
+    @media (max-width: 768px) {
       width: 400px;
     }
 
     .fifthSectionMainText {
       padding-top: 92px;
-      @media (max-width: 786px) {
+      @media (max-width: 768px) {
         padding-left: 15px;
       }
 
@@ -1388,7 +1398,7 @@ const FifthSection = styled.div`
       align-items: center;
       margin-top: 61px;
       margin-bottom: 200px;
-      @media (max-width: 786px) {
+      @media (max-width: 768px) {
         flex-direction: column;
         margin-top: 40px;
         margin-bottom: 50px;
@@ -1396,7 +1406,7 @@ const FifthSection = styled.div`
 
       img {
         width: 650px;
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           width: 400px;
         }
       }
@@ -1414,7 +1424,7 @@ const FifthSection = styled.div`
             line-height: 40px;
             color: #e7acbd;
             margin-top: 138px;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               margin-top: 60px;
             }
           }
@@ -1429,7 +1439,7 @@ const FifthSection = styled.div`
             line-height: 26px;
             margin-top: 133px;
             font-weight: lighter;
-            @media (max-width: 786px) {
+            @media (max-width: 768px) {
               margin-top: 60px;
             }
           }
@@ -1444,7 +1454,7 @@ const SixthSection = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       flex-direction: column;
       height: 400px;
     }
@@ -1456,7 +1466,7 @@ const SixthSection = styled.div`
       width: 1000px;
       height: 195px;
       margin: 30px 0;
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         flex-direction: column;
       }
 
@@ -1464,7 +1474,7 @@ const SixthSection = styled.div`
         width: 390px;
         height: 135px;
         padding: 30px 60px 30px 0;
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -1492,7 +1502,7 @@ const SixthSection = styled.div`
         padding: 30px 100px;
         border-right: 1px solid #e7acbd;
         border-left: 1px solid #e7acbd;
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -1520,7 +1530,7 @@ const SixthSection = styled.div`
         width: 390px;
         height: 135px;
         padding: 30px 0px 30px 85px;
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -1553,7 +1563,7 @@ const SixthSection = styled.div`
 
       img {
         width: 1000px;
-        @media (max-width: 786px) {
+        @media (max-width: 768px) {
           width: 400px;
         }
       }
@@ -1601,19 +1611,19 @@ const Footer = styled.div`
     align-items: center;
     background-color: #fce8ec;
     padding: 50px 0px;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
       padding: 30px 30px;
     }
 
     .footerTextBox {
       width: 1000px;
-      @media (max-width: 500px) {
+      @media (max-width: 768px) {
         width: 500px;
       }
 
       .socialIcon {
         float: right;
-        @media (max-width: 500px) {
+        @media (max-width: 768px) {
           margin-left: 20px;
         }
 
@@ -1621,7 +1631,7 @@ const Footer = styled.div`
           margin-right: 10px;
           width: 40px;
           height: 40px;
-          @media (max-width: 600px) {
+          @media (max-width: 768px) {
             width: 25px;
             height: 25px;
           }
@@ -1629,7 +1639,7 @@ const Footer = styled.div`
       }
 
       div {
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           flex-direction: column;
         }
 
